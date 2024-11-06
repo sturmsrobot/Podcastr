@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Podcastr 🎙️
 
-## Getting Started
+**Podcastr** ist eine moderne, KI-gestützte Podcast-Anwendung, die entwickelt wurde, um das Erlebnis des Podcast-Hörens neu zu definieren. Diese App kombiniert fortschrittliche Funktionen wie personalisierte Empfehlungen und eine intuitive Benutzeroberfläche, die Hörern dabei hilft, neue Inhalte zu entdecken und ihre Lieblings-Podcasts zu genießen.
 
-First, run the development server:
+## 📌 Features
+
+- **Intuitive Benutzeroberfläche**: Klare und benutzerfreundliche Navigation zum Stöbern und Verwalten von Podcasts.
+- **KI-gestützte Empfehlungen**: Vorschläge basierend auf Hörgewohnheiten und Vorlieben.
+- **Eingebauter Audioplayer**: Steuerungen wie Play, Pause und Fortschrittsspeicherung für ein unterbrechungsfreies Hörerlebnis.
+- **Benutzerauthentifizierung**: Sichere Anmeldung und Benutzerverwaltung durch Clerk.
+- **Backend-Datenmanagement**: Verwendung der Convex API zur dynamischen Verwaltung und Aktualisierung von Podcast-Daten.
+
+## 🚀 Tech Stack
+
+- **Frontend**: Next.js, React, Tailwind CSS
+- **Backend**: Convex (Serverless Backend)
+- **Authentifizierung**: Clerk
+- **Design & Prototyping**: Figma
+
+## 🛠️ Installation
+
+
+### 1. Repository klonen
+
+Zuerst musst du das Repository auf deinem lokalen Computer klonen:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+git clone https://github.com/DeinGitHubName/podcastr.git
+cd podcastr
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Abhängigkeiten installieren
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Installiere alle benötigten Abhängigkeiten, die im Projekt definiert sind:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```npm install```
 
-## Learn More
+### 3. Umgebungsvariablen konfigurieren
 
-To learn more about Next.js, take a look at the following resources:
+	•	Erstelle eine .env-Datei im Hauptverzeichnis des Projekts.
+	•	Füge deine API-Schlüssel für Convex und Clerk in die .env-Datei ein. Beispiel:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```NEXT_PUBLIC_CONVEX_KEY=dein_convex_api_schlüssel
+NEXT_PUBLIC_CLERK_KEY=dein_clerk_api_schlüssel```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 4. Entwicklungsserver starten
 
-## Deploy on Vercel
+Starte den Entwicklungsserver mit folgendem Befehl:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```npm run dev```
+Die App ist jetzt auf http://localhost:3000 verfügbar.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🌍 Deployment auf Vercel
+
+Das Projekt ist für das Deployment auf Vercel konzipiert. Du kannst das GitHub-Repository einfach mit deinem Vercel-Konto verbinden, um das Projekt automatisch zu deployen.
+
+Mit Podcastr bist du bereit, das Beste aus der Welt der Podcasts zu entdecken und zu hören!
