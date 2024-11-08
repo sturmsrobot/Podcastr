@@ -11,7 +11,7 @@ const Home = () => {
         {podcastData.map(({ id, title, description, imgURL }) => (
           <PodcastCard
             key={id}
-            imgUrl={imgURL}
+            imgURL={imgURL}
             title={title}
             description={description}
             podcastId={id}
