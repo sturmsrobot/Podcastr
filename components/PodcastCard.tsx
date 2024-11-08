@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 
+const placeholderURL = "public/placeholder/image 146.png";
+
 const PodcastCard = ({
   imgURL,
   title,
@@ -15,9 +17,8 @@ const PodcastCard = ({
   return (
     <div className="cursor-pointer">
       <figure className="flex flex-col gap-2">
-        {imgURL ? ( // Prüft, ob imgURL existiert
           <Image
-            src={imgURL}
+            src={imgURL || placeholderURL}
             width={174}
             height={174}
             alt={title}
